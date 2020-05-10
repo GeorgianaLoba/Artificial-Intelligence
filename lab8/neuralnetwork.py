@@ -95,7 +95,7 @@ class NeuralNetwork:
     def train_NN(self, x, y, iterations):
         '''
             Training the neural network using train data over a given number of iterations
-            We compute the expected value and propagate backwords in order to train the NN
+            We compute the expected value and propagate backwards in order to train the NN
         '''
         pos=0
         for i in range(iterations):
@@ -158,7 +158,7 @@ class NeuralNetwork:
         back_w1 = np.dot(X.T, second_back)
         
         
-        #it doesn't improve the accuracy if i change the biases as well
+        #it doesn't improve the accuracy if i change the biases
         #l_b1 = np.sum(wrt_z, axis=0)
         #l_b2 = np.sum(wrt_y, axis=0)
 
